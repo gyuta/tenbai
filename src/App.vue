@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="frame">
+      <div id="nav">
+        <router-link to="/shop">Shop</router-link>
+      </div>
+      <router-view/>
     </div>
-    <router-view/>
   </div>
 </template>
 
@@ -15,10 +16,20 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+
+  background-color: rgb(235, 235, 235);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.frame {
+  width: 60%;
+  height: 100vh;
+  background-color: rgb(168, 168, 231);
 }
 
 #nav {
-  padding: 30px;
 
   a {
     font-weight: bold;
